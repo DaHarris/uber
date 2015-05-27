@@ -1,3 +1,0 @@
-class FoodTruckApi
-
-end

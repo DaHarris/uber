@@ -17,6 +17,7 @@ class TruckFetcher
   def save_data(data)
     data.each do |truck|
       food_truck = FoodTruck.new
+      food_truck.json = truck
       food_truck.name = truck["applicant"]
       food_truck.location_description = truck["locationdescription"]
       food_truck.schedule = truck["schedule"]
