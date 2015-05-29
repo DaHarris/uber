@@ -24,9 +24,21 @@ class TruckFetcher
       food_truck.location = truck["address"]
       food_truck.location_id = truck["objectid"]
       food_truck.food = truck["fooditems"].gsub!(':',',') if truck["fooditems"]
+      location = get_latlng(food_truck.location) if food_truck.location
+      if location
+        food_truck.latitude = location[0].latitude
+        food_truck.longitude = location[0].longitude
+      end
       if food_truck.valid?
         food_truck.save
       end
     end
+  end
+
+  def get_latlng(address)
+    address += ", san francisco, california"
+    #add sleep function to not hit per second query limit
+    sleep(0.25)
+    return Geocoder.search(address)
   end
 end

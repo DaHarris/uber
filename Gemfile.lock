@@ -170,7 +170,7 @@ DEPENDENCIES
   faraday (~> 0.9.1)
   foundation-icons-sass-rails
   foundation-rails
-  geocoder (~> 1.2.8)
+  geocoder
   jbuilder (~> 2.0)
   jquery-rails
   pg
