@@ -35,8 +35,11 @@ $(document).ready(function() {
         function menuPull(name) {
           $('#pullout').css('width','70%');
           truck = foodTrucks.filter(function(x) { return x.name === name})[0];
-          $('#name').text(truck.name);
+          $('#name').text("    " + truck.name);
           $('#name').prepend('<i class="fi-x"></i>');
+          $('#address').text(truck.location);
+          $('#other-address').text(truck.location_description);
+          $('#food').text(truck.food);
         }
 
 
