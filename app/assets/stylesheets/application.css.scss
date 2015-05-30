@@ -28,19 +28,83 @@ html, body {
 
 #truck-info {
   margin: 5%;
+  height: 45%;
+  width: 100%;
   color: #CCCCCC;
+  overflow: scroll;
 }
 
 #name {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 250%;
+  font-family: 'Lobster', cursive;
+  font-size: 350%;
 }
 
-#divider {
+.divider {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   height: 1px;
   background: #CCCCCC;
+}
+
+#address {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 225%;
+  line-height: 60px;
+}
+
+#other-address {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 150%;
+  line-height: 40px;
+}
+
+#food {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 125%;
+  line-height: 40px;
+}
+
+#twitter-header {
+  margin-left: 5%;
+  font-family: 'Noto Sans', sans-serif;
+  display: absolute;
+  color: #333333;
+}
+
+#twitter {
+  background: #DDDDDD;
+  height: 45%;
+  width: 100%;
+  overflow: auto;
+}
+
+.tweet {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 125px;
+  width: 100%;
+  color: #333333;
+  border-top: 1px solid #333333;
+}
+
+.profile-picture {
+  float: left;
+  height: 125px;
+  width: 125px;
+}
+
+.tweet-user {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+  line-height: 40px;
+}
+
+.tweet-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 70%;
+  font-weight: 100;
+  line-height: 25px;
 }

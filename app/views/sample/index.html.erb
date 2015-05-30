@@ -3,9 +3,25 @@
 <div id="pullout">
   <div id="truck-info">
     <div id="name"></div>
-    <div id="divider"></div>
-    <div id="address"></div>
-    <div id="other-address"></div>
-    <div id="food"></div>
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="col-8">
+      <div id="address"></div>
+      <div id="other-address"></div>
+      <div id="food"></div>
+    </div>
+  </div>
+  <div id="twitter">
+    <h1 id="twitter-header">Mobile Cravings: SF Food Truck Twitter</h1>
+    <div class="col-12">
+      <% @tweets.each do |tweet| %>
+        <div class="tweet">
+          <%= image_tag(tweet.user.profile_background_image_url_https, class: "profile-picture") %>
+          <div class="tweet-user"><%= tweet.user.screen_name %>
+            <div class="tweet-text"><%= tweet.text %></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -23,7 +23,7 @@ $(document).ready(function() {
           google.maps.event.trigger(map, "resize");
           position = new google.maps.LatLng(lat, long);
           map.setCenter(position);
-          map.setZoom(15);
+          map.setZoom(16);
         }
 
         $('body').on('click', '.fi-x', function(){
@@ -39,7 +39,7 @@ $(document).ready(function() {
           $('#name').prepend('<i class="fi-x"></i>');
           $('#address').text(truck.location);
           $('#other-address').text(truck.location_description);
-          $('#food').text(truck.food);
+          $('#food').text("Offerings: " + truck.food);
         }
 
 

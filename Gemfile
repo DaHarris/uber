@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
 
+#twitter gem
+gem 'twitter'
+
 #gem faraday for api requests
 gem 'faraday', '~> 0.9.1'
 
@@ -51,7 +54,7 @@ group :development, :test do
   gem 'pry'
 
   #dotenv for api variables
-  gem 'dotenv', '~> 2.0.1'
+  gem 'dotenv-rails'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
