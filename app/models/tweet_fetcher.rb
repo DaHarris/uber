@@ -13,7 +13,3 @@ class TweetFetcher
     tweets = @client.list_timeline(URI.parse('https://twitter.com/MobileCravings/sf-food-trucks'))
   end
 end
-# puts crap[0].user.screen_name
-# puts crap[0].text
-# puts crap[0].id
-# puts crap[0].user.profile_background_image_url_https
