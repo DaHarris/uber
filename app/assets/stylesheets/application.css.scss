@@ -13,7 +13,7 @@ html, body {
   margin-right: 10%;
 }
 
-#logo, #sample, #api {
+#logo, #signout, #api {
   color: #DDDDDD;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -31,13 +31,21 @@ html, body {
   float: right;
 }
 
+#signout {
+  position: relative;
+  float: right;
+  right: 10%;
+}
+
 #navbar {
   height: 5%;
   width: 100%;
   min-height: 45px;
   background: #000000;
   z-index: 11;
-  box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow:0 0 8px 0 black;
+  -webkit-box-shadow:0 0 8px 0 black;
+  box-shadow:0 0 8px 0 black;
 }
 
 #map-canvas {
@@ -52,7 +60,9 @@ html, body {
   right: 0;
   position: absolute;
   background-color: #333333;
-  box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow:0 0 8px 0 black;
+  -webkit-box-shadow:0 0 8px 0 black;
+  box-shadow:0 0 8px 0 black;
 }
 
 .fi-x:hover {

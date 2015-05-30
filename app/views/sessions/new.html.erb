@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Sign In</h1>
+  <%= form_tag signin_path do %>
+    <%= label_tag :email %>
+    <%= email_field_tag :email, nil%>
+    <br><br>
+    <%= label_tag :password %>
+    <%= password_field_tag :password, nil%>
+    <br><br>
+    <%= submit_tag 'Sign In'%>
+    <a href="/users/new" id="signup">Signup</a>
+  <% end %>
+</div>

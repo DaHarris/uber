@@ -11,6 +11,14 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :users, only: [:new, :create, :destroy]
+
+  get 'signin' => 'sessions#new'
+  post 'signin' => 'sessions#create'
+  get 'signout' => 'sessions#destroy'
+
+  get 'documentation' => 'api/documentation#home'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

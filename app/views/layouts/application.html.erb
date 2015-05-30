@@ -10,20 +10,25 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
   </head>
 
   <body>
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 
     <div id="navbar">
       <div class="container">
-        <a href="#" id="logo">FoodTruckin</a>
+        <a href="/" id="logo">FoodTruckin</a>
         <a href="/documentation" id="api">API</a>
+        <% if current_user %>
+          <a href="/signout" id="signout">Signout</a>
+        <% end %>
       </div>
     </div>
 
     <%= yield %>
 
   </body>
+
+
 </html>
