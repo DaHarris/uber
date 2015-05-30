@@ -15,8 +15,7 @@ $(document).ready(function() {
                                          position.coords.longitude);
 
 
-        var setPosition = new google.maps.LatLng(37.7833, -122.4167);
-        map.setCenter(setPosition);
+        map.setCenter(pos);
 
         function centerFoodTruck(lat, long) {
           $('#map-canvas').css('width','30%');
@@ -68,29 +67,20 @@ $(document).ready(function() {
           }
 
           pos = new google.maps.LatLng(lat,long);
-          //
-          // if (title == "Your Location") {
-          //   iconBase = 'http://mt.googleapis.com/vt/icon/name=icons/spotlight/spotlight-poi.png';
-          // } else {
-          //   var check = false;
-          //   for (var i=0;i<visited_breweries.length;i++) {
-          //     if (visited_breweries[i].brewery_name == title) {
-          //       check = true;
-          //       break;
-          //     }
-          //   }
-          //   if (check == false) {
-          //
-          // var iconBase = 'http://mt.googleapis.com/vt/icon/name=icons/spotlight/spotlight-poi.png';
-          //   } else {
-          //     var iconBase = 'http://icons.iconarchive.com/icons/icons8/windows-8/32/Food-Beer-icon.png';
-          //   }
-          // }
+
+          var iconbase;
+
+          if (title == "Your Location") {
+            iconBase = 'http://piepho.com/wp-content/uploads/2012/12/glyphicons_242_google_maps.png';
+          } else {
+            iconBase = 'http://enroute.aircanada.com/web/images/icons/city/map-red-pin-food_drink.png';
+          }
 
           var marker = new google.maps.Marker({
               position: pos,
               map: map,
-              title: title
+              title: title,
+              icon: iconBase
           });
 
 
