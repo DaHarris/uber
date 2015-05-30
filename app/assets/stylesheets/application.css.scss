@@ -6,6 +6,11 @@
 html, body {
   width: 100%;
   height: 100%;
+  top: 50px;
+}
+
+body {
+  margin-top: 50px;
 }
 
 h1 {
@@ -43,10 +48,13 @@ h1 {
 }
 
 #navbar {
+  float: right;
   height: 5%;
   width: 100%;
-  min-height: 45px;
+  min-height: 50px;
+  top: 0;
   background: #000000;
+  position: fixed;
   z-index: 11;
   -moz-box-shadow:0 0 8px 0 black;
   -webkit-box-shadow:0 0 8px 0 black;
@@ -54,20 +62,22 @@ h1 {
 }
 
 #map-canvas {
-  height: 95%;
+  float: left;
+  height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 #pullout {
+  float: right;
   width: 0%;
-  height: 95%;
+  height: 100%;
   right: 0;
-  position: absolute;
+  position: fixed;
   background-color: #333333;
   -moz-box-shadow:0 0 8px 0 black;
   -webkit-box-shadow:0 0 8px 0 black;
   box-shadow:0 0 8px 0 black;
+  overflow: auto;
 }
 
 .fi-x:hover {
@@ -75,9 +85,10 @@ h1 {
 }
 
 #truck-info {
-  margin: 5%;
-  height: 45%;
-  width: 100%;
+  margin-top: 45px;
+  margin-left: 5%;
+  height: 95%;
+  width: 95%;
   color: #CCCCCC;
   overflow: scroll;
 }
@@ -155,4 +166,12 @@ h1 {
   font-size: 70%;
   font-weight: 100;
   line-height: 25px;
+}
+
+#top {
+  height: 20%;
+}
+
+#bottom {
+  height: 70%;
 }
