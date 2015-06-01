@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to documentation_path
     else
+      flash[:notice] = "Incorrect Login Credentials."
       redirect_to signin_path
     end
   end

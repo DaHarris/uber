@@ -1,6 +1,11 @@
 <br><br><br><br>
 <div class="container">
   <h1>Sign In</h1>
+  <% if notice %>
+    <br>
+    <%= notice %>
+    <br><br><br>
+  <% end %>
   <%= form_tag signin_path do %>
     <%= label_tag :email %>
     <%= email_field_tag :email, nil%>

@@ -1,6 +1,14 @@
 <br><br><br><br>
 <div class="container">
   <h1>Signup</h1>
+  <% if @user.errors.any? %>
+    There were errors on the page:
+      <% @user.errors.full_messages.each do |msg| %>
+        <li class="errors"><%= msg %></li>
+      <% end %>
+    </ul>
+    <br><br>
+  <% end %>
   <%= form_for @user do |f| %>
 
       <%= f.label :email %>
