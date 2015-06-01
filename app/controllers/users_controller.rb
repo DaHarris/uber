@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.api_key = SecureRandom.hex
     if @user.valid?
       @user.save
       session[:user_id] = @user.id

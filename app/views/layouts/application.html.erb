@@ -21,7 +21,7 @@
         <a href="/" id="logo">FoodTruckin</a>
         <a href="/documentation" id="api">API</a>
         <% if current_user %>
-          <a href="/signout" id="signout">Signout</a>
+          <a href="/signout" id="signout">Signout <%= current_user.email %></a>
         <% end %>
       </div>
     </div>

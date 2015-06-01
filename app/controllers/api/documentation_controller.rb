@@ -2,7 +2,7 @@ class Api::DocumentationController < ApplicationController
   before_action :authenticate
 
   def home
-
+    @user = current_user
   end
 
   private
