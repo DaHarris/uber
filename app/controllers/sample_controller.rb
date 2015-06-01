@@ -5,11 +5,12 @@ class SampleController < ApplicationController
   end
 
   def sample
-    request = request.env["HTTP_REFERER"]
-    if request == "http://foodtruckin.herokuapp.com/"
-      render json: FoodTruck.all
-    else
-      render json: { :error => "Use /api/v1/all for all api requests."}
-    end
+    # request = request.env["HTTP_REFERER"]
+    # if request == "http://foodtruckin.herokuapp.com/"
+    #   render json: FoodTruck.all
+    # else
+    #   render json: { :error => "Use /api/v1/all for all api requests."}
+    # end
+    render json: FoodTruck.all
   end
 end
