@@ -46,7 +46,7 @@ $(document).ready(function() {
 
         function getTrucks() {
           $.ajax({
-            url: "/api/v1/all",
+            url: "/sample",
             type: "get"
           }).success(function(data) {
             $.each(data, function(index, truck) {

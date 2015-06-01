@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post 'signin' => 'sessions#create'
   get 'signout' => 'sessions#destroy'
 
+  get 'sample' => 'sample#sample'
   get 'documentation' => 'api/documentation#home'
 
   # Example of regular route:
