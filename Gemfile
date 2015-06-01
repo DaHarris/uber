@@ -21,6 +21,9 @@ gem 'foundation-icons-sass-rails'
 #twitter gem
 gem 'twitter'
 
+#automate rake task timer
+gem 'whenever'
+
 #gem faraday for api requests
 gem 'faraday', '~> 0.9.1'
 
