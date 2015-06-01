@@ -1,6 +1,66 @@
 <br><br><br><br>
 <div class="container">
-  <p id="api-box">API Key: <%= @user.api_key %></p>
+  <p class="api-box">API Key: <%= @user.api_key %></p>
+  <br><br>
   <h1>API Documentation: </h1>
 
+  <br>
+
+  <p id="info">FoodTruckin' is an open API for food truck information in the San Francisco area. By accessing this
+    page you have logged in and we have provided an API key for you to use in your applications (see top).
+    Most of the information in this API was provided in its original form by DATASF from the San Francisco
+    government site located @ <a href="https://data.sfgov.org/Economy-and-Community/Mobile-Food-Facility-Permit/rqzj-sfat?" target="blank">link</a>.
+  </p>
+
+  <br>
+  <br>
+
+  <p class="samples">Get all food trucks:
+  <p class="api-box">http://foodtruckin.herokuapp.com/api/v1/all?api_key=["YOUR API KEY"]</p>
+  <a href="http://foodtruckin.herokuapp.com/api/v1/all?api_key=<%= @user.api_key %>" target="blank">Go to your API GET call</a>
+
+  <br><br>
+
+  <h3 class="samples">The information included in the API GET request is as follows:</h3>
+  <br>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>name</th>
+        <td>Name of the food truck</td>
+      </tr>
+      <tr>
+        <th>location</th>
+        <td>Given address of the food truck</td>
+      </tr>
+      <tr>
+        <th>location_description</th>
+        <td>Other places the food truck might be found</td>
+      </tr>
+      <tr>
+        <th>location_id</th>
+        <td>Location ID of the food truck provided by DATASF</td>
+      </tr>
+      <tr>
+        <th>schedule</th>
+        <td>URL for the online schedule of the food truck</td>
+      </tr>
+      <tr>
+        <th>food</th>
+        <td>List of some of the food offered by the truck</td>
+      </tr>
+      <tr>
+        <th>longitude,longitude</th>
+        <td>latitude and logitude of the food truck geocoded by Google Maps
+          Geocoding API. This is different from the latitude and longitude given
+          by the DATASF api because the locaitons provided were not a good representation
+          of the addresses.</td>
+      </tr>
+      <tr>
+        <th>json</th>
+        <td>The full json string with extra information provided by the DATASF API. Most of
+        this data was ommited from the top layer of our provided data because it was irrelevant.</td>
+      </tr>
+    </thead>
+  </table>
 </div>

@@ -13,6 +13,28 @@ h1 {
   font-weight: 100;
 }
 
+table, th, td {
+  font-family: 'Noto Sans', sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.samples {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+#info {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .container {
   margin-left: 10%;
   margin-right: 10%;
@@ -173,7 +195,7 @@ h1 {
   height: 70%;
 }
 
-#api-box {
+.api-box {
   font-family: 'Noto Sans', sans-serif;
   padding: 10px;
   background: #CCCCCC;
