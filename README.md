@@ -34,6 +34,15 @@ a css reset and custom columns. Other technologies used were the twitter API for
 tweets from the San Francisco food truck Twitter, Faraday for HTTP Requests, Google Maps API,
 wheneverize for scheduling rake tasks, and some other gems in the Gemfile.
 
+# installing/running
+1. git clone
+2. rake db:migrate
+3. in rails c, run TruckFetcher.new.get_food_trucks to seed database
+4. rails s (to start server)
+5. go to localhost:3000
+6. edit sample controller to allow requests from localhost:3000, it is set up
+now to only accept requests from the production server.
+
 # what else
 
 There is always more I could get done. I could provide multiple API keys to users depending

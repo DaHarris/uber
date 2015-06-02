@@ -52,6 +52,12 @@ group :production do
 end
 
 group :development, :test do
+
+  #testing/helper gems
+  gem 'factory_girl'
+  gem 'rspec-rails'
+  gem 'capybara'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
