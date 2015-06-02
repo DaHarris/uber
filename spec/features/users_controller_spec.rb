@@ -18,7 +18,7 @@ RSpec.describe UsersController, type: :controller do
 
   it "Redirects to the API documentation" do
     post :create, user: {:email => "a@a.a", :password => "whoa"}
-    response.should redirect_to "/documentation"
+    expect(response).to redirect_to("/documentation")
   end
 
 end
