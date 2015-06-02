@@ -1,6 +1,6 @@
 FactoryGirl.define do
 
-  factory :truck do
+  factory :food_truck do
     name "Grillenium Falcon"
     location_description "in the Kessel Run"
     schedule "http://ham.solo"
