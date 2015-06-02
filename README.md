@@ -34,6 +34,13 @@ a css reset and custom columns. Other technologies used were the twitter API for
 tweets from the San Francisco food truck Twitter, Faraday for HTTP Requests, Google Maps API,
 wheneverize for scheduling rake tasks, and some other gems in the Gemfile.
 
+# testing
+
+Testing was done for controller and view specs by using Rspec and FactoryGirl. Testing was done
+for users, signin, signup, and API usage.
+
+Run tests with: rspec spec/features/["test name"]
+
 # installing/running
 1. git clone
 2. rake db:migrate
