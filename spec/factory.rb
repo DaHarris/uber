@@ -14,7 +14,7 @@ FactoryGirl.define do
 
   factory :user do
     email "coolguy@coolguy.net"
-    password_digest "adfskljafdsljkadfsljkafsdljk"
+    password "stuff"
     api_key "1234"
     api_requests "1"
   end
