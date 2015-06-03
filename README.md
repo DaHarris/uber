@@ -53,8 +53,7 @@ now to only accept requests from the production server.
 # what else
 
 There is always more I could get done. I could provide multiple API keys to users depending
-on how many projects they had. I would provide ratings for food trucks. I would have spent time making
-the design completely responsive. I would spend more time making the pullout look better. I would eat at each one of the food trucks (for research purposes).
+on how many projects they had. I would provide ratings for food trucks. I would add more tests. I would have spent time making the design completely responsive. I would spend more time making the pullout look better. I would figure out why the lat long values given in the DATASF API were questionable and why the google maps reverse geocoding lat long values I got back were also slightly questionable. I would eat at each one of the food trucks (for research purposes).
 
 # me! (Daniel Harris)
 
